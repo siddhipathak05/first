@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+<title>BackgroundcolorChange</title>
+<style>
+button{
+font-size:20px;
+width:150px;
+background-color:Blue;
+color:white;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Change Background Color</h1>
+<button onclick="bgcolorChange()">Click here</button>
+<script>
+var colors=["Red","Cyan","Silver","Gray","DarkBlue","LightBlue","Orange","Purple","DeepSkyBlue","Parchment","Brown","Yellow","Maroon","Lime","Green","Magenta","Olive","Pink","Aquamarine"];
+function bgcolorChange()
+{
+document.body.style.backgroundColor=colors[parseInt(Math.random()*colors.length)];
+
+
+}
+</script>
+</body>
+</html>
